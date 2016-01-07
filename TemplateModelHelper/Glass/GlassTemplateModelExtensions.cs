@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Glass.Mapper.Sc;
+using TemplateModelHelper.Models;
 
 namespace TemplateModelHelper.Glass
 {

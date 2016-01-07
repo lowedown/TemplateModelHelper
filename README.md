@@ -9,6 +9,7 @@ Read [this post](https://sitecoreblog.marklowe.ch/2016/01/querying-generated-tem
 * Easy to use, easy-to-read code
 * Handles Template inheritance
 * Unit-testing ready
+* DI-ready
 
 ## Usage
 
