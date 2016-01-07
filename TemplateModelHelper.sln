@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateModelHelper.Models", "TemplateModelHelper.Models\TemplateModelHelper.Models.csproj", "{09DDA964-A195-49B9-B35B-57F4C73EF6B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateModelHelper", "TemplateModelHelper\TemplateModelHelper.csproj", "{8DAF7F3E-23AC-4472-AC1F-A10F63E26545}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09DDA964-A195-49B9-B35B-57F4C73EF6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DDA964-A195-49B9-B35B-57F4C73EF6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DDA964-A195-49B9-B35B-57F4C73EF6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DDA964-A195-49B9-B35B-57F4C73EF6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAF7F3E-23AC-4472-AC1F-A10F63E26545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAF7F3E-23AC-4472-AC1F-A10F63E26545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAF7F3E-23AC-4472-AC1F-A10F63E26545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAF7F3E-23AC-4472-AC1F-A10F63E26545}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
