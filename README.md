@@ -107,8 +107,9 @@ By implementing the *ITemplateModelHelper<T>* interface, you can also build impl
 
 ## Known limitations
 
-Currently, template inheritance is only supported with interfaces that reside in the same assembly. For example if IMyPageTemplate lives in *MyProject.MyModels.dll* and MySubPageTemplate which inherits *IMyPageTemplate* lives in *MyProject.MyOtherModels.dll*.
+Currently, template inheritance is only supported with interfaces that reside in the same assembly. 
 
 This shouldn't be a problem as long as your generated interfaces aren't spread across multiple assemblies.
+For example if IMyPageTemplate lives in *MyProject.MyModels.dll* and MySubPageTemplate which inherits *IMyPageTemplate* lives in *MyProject.MyOtherModels.dll* querying by inheritance won't work.
 
-Otherwise, this can be fixed by scanning all assemblies in *TemplateModelHelperAttribute.GetApplicapleTypes()* if needed.
+This can be fixed by scanning all assemblies in *TemplateModelHelperAttribute.GetApplicapleTypes()* if needed.
