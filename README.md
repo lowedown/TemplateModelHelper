@@ -91,3 +91,16 @@ To work correctly, TemplateModelHelper needs a IGlassBase interface with at leas
     } 
 
 When checking out the code you'll notice the missing reference to IGlassBase. Just point it at your own implementation.
+
+## Unit Testing
+
+If you need to test code using the helper's extension methods, you can replace the helper implementation through a mock like this:
+
+    ITemplateModelHelper<IGlassBase> mock = new MyMockTemplateModelHelper();
+    GlassTemplateModelExtensions.Helper = mock;
+
+You could also extend the HelperFactory() in the GlassTemplateModelExtensions class to get the helper implementation from your DI container of choice.  
+
+## Other OR Mappers
+
+By implementing the *ITemplateModelHelper<T>* interface, you can also build implementations for other OR mappers than Glass.
