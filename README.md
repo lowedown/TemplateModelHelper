@@ -104,3 +104,11 @@ You could also extend the HelperFactory() in the GlassTemplateModelExtensions cl
 ## Other OR Mappers
 
 By implementing the *ITemplateModelHelper<T>* interface, you can also build implementations for other OR mappers than Glass.
+
+## Known limitations
+
+Currently, template inheritance is only supported with interfaces that reside in the same assembly. For example if IMyPageTemplate lives in *MyProject.MyModels.dll* and MySubPageTemplate which inherits *IMyPageTemplate* lives in *MyProject.MyOtherModels.dll*.
+
+This shouldn't be a problem as long as your generated interfaces aren't spread across multiple assemblies.
+
+Otherwise, this can be fixed by scanning all assemblies in *TemplateModelHelperAttribute.GetApplicapleTypes()* if needed.
